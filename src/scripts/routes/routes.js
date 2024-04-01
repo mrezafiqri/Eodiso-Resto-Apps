@@ -3,9 +3,9 @@ import Favorites from "../views/pages/favorites";
 import Home from "../views/pages/home";
 
 const routes = {
-  "/": Home,
+  "/Eodiso-Resto-Apps/": Home,
   "/Eodiso-Resto-Apps/detail/:id": DetailResto,
-  "/favorite": Favorites,
+  "/Eodiso-Resto-Apps/favorite": Favorites,
 };
 
 export default routes;
