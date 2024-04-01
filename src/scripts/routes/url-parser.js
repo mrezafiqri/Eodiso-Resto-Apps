@@ -13,15 +13,15 @@ const UrlParser = {
   _urlSplitter(url) {
     const urlsSplits = url.split("/");
     return {
-      resource: urlsSplits[2] || null,
-      id: urlsSplits[3] || null,
-      verb: urlsSplits[4] || null,
+      resource: urlsSplits[1] || null,
+      id: urlsSplits[2] || null,
+      verb: urlsSplits[3] || null,
     };
   },
 
   _urlCombiner(splitedUrl) {
     return (
-      (splitedUrl.resource ? `/${splitedUrl.resource}` : "/") + (splitedUrl.id ? "/:id" : "") + (splitedUrl.verb ? `/${splitedUrl.verb}` : "")
+      (splitedUrl.resource ? `/Eodiso-Resto-Apps/${splitedUrl.resource}` : "/") + (splitedUrl.id ? "/:id" : "") + (splitedUrl.verb ? `/${splitedUrl.verb}` : "")
     );
   },
 };
